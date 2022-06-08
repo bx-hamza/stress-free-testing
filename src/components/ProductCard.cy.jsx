@@ -15,7 +15,8 @@ const rating = 4.67
 
 describe('<ProductCard />', () => {
   beforeEach(() => {
-    cy.mount(
+    cy.mount(() => 
+      (<div class="resize overflow-auto">
       <ProductCard
         class="m-2"
         img={img}
@@ -23,18 +24,25 @@ describe('<ProductCard />', () => {
         price={price}
         additional={additional}
         rating={rating}
-      />,
+      />
+      </div>),
     )
   })
 
-  it.only('mounts', () => {})
+  it('works', () => {})
 
-  it.skip('renders a description', () => {
-    // You can either try out Testing Library (I suggest cy.findByText)
-    // Or, you can add data-testid selectors inside of the ProductCard.
+  it('renders the image', () => {})
+  it('renders the description', () => {
+    cy.findByText(description).should('be.visible')
+  })
+  it('renders the price', () => {
+    cy.findByText(price).should('be.visible')
+  })
+  it('renders the rating', () => {
+    cy.findByText(rating).should('be.visible')
   })
 
-  it.skip('...', () => {
-    // What other features does this ProductCard have?
-  })
+  it('has a watch button', () => {})
+  it('the product watch button is not selected by default', () => {})
+  it('when you click watch, the product is watched', () => {})
 })
