@@ -1,10 +1,10 @@
-const { defineConfig } = require('cypress')
+import { defineConfig } from 'vite'
 
-module.exports = defineConfig({
+export default defineConfig({
   component: {
     devServer: {
       bundler: 'vite',
       framework: 'vue'
-    },
+    }
   },
 })
