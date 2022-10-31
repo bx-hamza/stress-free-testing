@@ -1,18 +1,14 @@
 <h1 align="center">Stress-free Testing with Vue 3, Cypress, and Vite</h1>
 
-<p align="center">A pre-conference workshop for [Vue Toronto 2021][vue toronto].</p>
-
-<p align="center">A version of this repository written in Typescript is available: [Stress Free Testing (Typescript!)][typescript repo]</p>
+<p align="center">A pre-conference workshop for Vue Toronto 2022</p>
 
 **🔗 Quick Links:** [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
-
-
 ## Get Ready for the Day
 
 Good morning! Either before or at the beginning of the workshop, make sure to set up your environment:
 
 1. If you don't already have it... install Node >= 14.17.0 with [nvm][nvm install] and install [yarn][yarn install].
-2. Choose your adventure: Typescript or Javascript. Clone either the [Stress Free Testing][javascript repo] or [Stress Free Testing (Typescript!)][typescript repo] repository.
+2. Choose your adventure: Typescript or Javascript. Clone the [Stress Free Testing][javascript repo]
 
     ```sh
     gh repo clone JessicaSachs/stress-free-testing # Github CLI
