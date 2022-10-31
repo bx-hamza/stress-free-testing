@@ -23,15 +23,7 @@ const quickLinks = [
 
     <p>
       A pre-conference workshop for
-      <a href target="_blank">VueConf US 2022</a>.
-    </p>
-
-    <p>
-      A version of this repository written in TypeScript is available:
-      <a
-        href="https://github.com/JessicaSachs/stress-free-testing-ts"
-        target="_blank"
-      >Stress Free Testing (Typescript!)</a>.
+      <a href target="_blank">Vue Toronto 2022</a>.
     </p>
 
     <p class="pb-4">
