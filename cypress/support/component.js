@@ -13,7 +13,7 @@ import 'virtual:windi-devtools'
 import '../../src/main.scss'
 
 // 3. Import the real mount function and wrap it.
-import { mount as realMount } from '@cypress/vue'
+import { mount as realMount } from 'cypress/vue'
 
 // 4. Import any global plugins like Vue Router or Pinia or Vuex
 import { createRouter } from '../../src/router'

@@ -1,4 +1,4 @@
-import { mount } from '@cypress/vue'
+import { mount } from 'cypress/vue'
 import Accordion from './Accordion.vue'
 
 const headerSelector = '[data-testid=header]'

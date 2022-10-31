@@ -1,6 +1,6 @@
 import Tabs from './Tabs.vue'
-import { mount } from '@cypress/vue'
-import faker from 'faker'
+import { mount } from 'cypress/vue'
+import { faker } from '@faker-js/faker'
 
 const items = [
   {
@@ -31,6 +31,8 @@ describe('<Tabs />', () => {
     // 1. The event was emitted
     // 2. The focus state is set (See `have.focus` assertion)
     // 3. Keybindings are working as expected
+
+    debugger
 
     cy.findByText(items[1].text).click().should('have.focus')
     cy.get('@selectSpy').should('have.been.calledWith', items[1])

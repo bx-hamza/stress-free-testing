@@ -1,4 +1,4 @@
-import { mount } from '@cypress/vue'
+import { mount } from 'cypress/vue'
 import ProductCard from './ProductCard.vue'
 
 // A Vite-specific parameter to resolve the url of your image.

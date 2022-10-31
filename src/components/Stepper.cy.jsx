@@ -1,4 +1,4 @@
-import { mount } from '@cypress/vue'
+import { mount } from 'cypress/vue'
 import Stepper from './Stepper.vue'
 
 const textSelector = '[data-testid=counter]'
