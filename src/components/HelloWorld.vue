@@ -1,9 +1,11 @@
 <script setup>
-import Stepper from './Stepper.vue'
+import { ref } from 'vue'
 
 defineProps({
   msg: String
 })
+
+const count = ref(0)
 
 const quickLinks = [
   { text: 'Official Cypress Component Testing Docs', href: 'https://on.cypress.io/component'},
@@ -21,18 +23,10 @@ const quickLinks = [
 
     <p>
       A pre-conference workshop for
-      <a href target="_blank">VueConf US 2022</a>.
+      <a href target="_blank">Vue Toronto 2022</a>.
     </p>
 
-    <p>
-      A version of this repository written in TypeScript is available:
-      <a
-        href="https://github.com/JessicaSachs/stress-free-testing-ts"
-        target="_blank"
-      >Stress Free Testing (Typescript!)</a>.
-    </p>
-
-    <p class="py-4">
+    <p class="pb-4">
       <b>🔗 Quick Links:</b>
       <span>
         <a
@@ -45,12 +39,13 @@ const quickLinks = [
       </span>
     </p>
 
-    <h2 class="text-xl">Play with the Stepper after your tests finish</h2>
-
-    <!-- Use a selector like data-testid to access the counter
-    and call `.click()` from within the test.-->
-    <Stepper></Stepper>
-
+    <h2 class="text-xl">Play with the Counter after your tests finish</h2>
+    <button
+      class="px-2 py-1 mx-auto rounded hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px"
+      data-testid="counter"
+      type="button"
+      @click="count++"
+    >count is: {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test live reload.
