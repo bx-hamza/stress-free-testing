@@ -9,7 +9,7 @@
 Good morning! Either before or at the beginning of the workshop, make sure to set up your environment:
 
 1. If you don't already have it... install Node >= 14.17.0 with [nvm][nvm install] and install [yarn][yarn install].
-2. Clone either the [Stress Free Testing][javascript repo].
+2. Clone the [Stress Free Testing][javascript repo] repo.
     ```sh
     gh repo clone JessicaSachs/stress-free-testing # Github CLI
     ```

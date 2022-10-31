@@ -32,14 +32,14 @@ describe('<Stepper />', () => {
 
   describe('max', () => {
     it('supports a max prop', () => {
-      mount(<Stepper max={2} />)
+      cy.mount(<Stepper max={2} />)
       cy.get(textSelector).should('contain.text', '0')
       cy.get(incrementSelector).click().click().click()
       cy.get(textSelector).should('contain.text', '2')
     })
 
     it('has a default of 5 for the max prop', () => {
-      mount(<Stepper />)
+      cy.mount(<Stepper />)
       cy.get(textSelector).should('contain.text', '0')
       cy.get(incrementSelector)
         .then(($incrementButton) => {

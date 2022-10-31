@@ -1,5 +1,6 @@
 <script setup>
 import StarRating from 'vue-star-rating'
+
 defineProps({
   img: Object,
   description: String,
