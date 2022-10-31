@@ -32,4 +32,7 @@ export default defineConfig({
       resolvers: IconsResolver(),
     })
   ],
+  resolve: {
+    dedupe: ['vue']
+  }
 })
