@@ -19,7 +19,7 @@ defineProps({
   </section>
 </template>
 
-<style lang="scss" setup>
+<style lang="scss" scoped>
 section {
   grid-template-columns: repeat(auto-fill, 280px);
 }
