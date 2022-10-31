@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers'
+import WindiConfigVariants from '@windicss/plugin-interaction-variants'
 
 export default defineConfig({
   extract: {
@@ -12,5 +13,5 @@ export default defineConfig({
       mono: ['Fira Code', 'monospace'],
     },
   },
-  plugins: [require('@windicss/plugin-interaction-variants')],
+  plugins: [WindiConfigVariants],
 })
