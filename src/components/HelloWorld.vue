@@ -21,15 +21,7 @@ const quickLinks = [
 
     <p>
       A pre-conference workshop for
-      <a href target="_blank">VueConf US 2022</a>.
-    </p>
-
-    <p>
-      A version of this repository written in TypeScript is available:
-      <a
-        href="https://github.com/JessicaSachs/stress-free-testing-ts"
-        target="_blank"
-      >Stress Free Testing (Typescript!)</a>.
+      <a href target="_blank">Vue Toronto</a>.
     </p>
 
     <p class="py-4">
@@ -49,7 +41,9 @@ const quickLinks = [
 
     <!-- Use a selector like data-testid to access the counter
     and call `.click()` from within the test.-->
-    <Stepper></Stepper>
+    <Stepper
+      class="px-2 py-1 mx-auto rounded hover:ring-1 focus:ring-1 border-1 focus:outline-none w-120px"
+    ></Stepper>
 
     <p>
       Edit
