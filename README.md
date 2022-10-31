@@ -1,6 +1,6 @@
 <h1 align="center">Stress-free Testing with Vue 3, Cypress, and Vite</h1>
 
-<p align="center">A pre-conference workshop for VueConf US 2022</p>
+<p align="center">A pre-conference workshop for Vue Toronto 2022</p>
 
 **🔗 Quick Links:** [Official Cypress Docs][cypress ct docs], [Vue Test Utils API for Vue 3][vtu docs], [Lachlan Miller's Vue Testing Handbook][lachlans handbook], [Interacting with Elements using Cy Commands][cypress events], [Cypress API][cypress api], [Chai Matchers][cypress chai matchers]
 
@@ -12,10 +12,6 @@ Good morning! Either before or at the beginning of the workshop, make sure to se
 2. Clone either the [Stress Free Testing][javascript repo].
     ```sh
     gh repo clone JessicaSachs/stress-free-testing # Github CLI
-    ```
-3. Or the [Stress Free Testing TypeScript Repo][typescript repo]
-    ```sh
-    gh repo clone JessicaSachs/stress-free-testing-ts
     ```
 
 3. Run `yarn install`.
@@ -75,7 +71,6 @@ Please use VSCode with Recommended Extensions for the best Developer Experience.
 [miro app downloads]: https://miro.com/apps/
 [figma app downloads]: https://www.figma.com/downloads/
 [javascript repo]: https://github.com/JessicaSachs/stress-free-testing
-[typescript repo]: https://github.com/JessicaSachs/stress-free-testing-ts
 [nvm install]: https://github.com/nvm-sh/nvm#installing-and-updating
 [yarn install]: https://yarnpkg.com
 [cypress chai matchers]: https://docs.cypress.io/guides/references/assertions#Chai

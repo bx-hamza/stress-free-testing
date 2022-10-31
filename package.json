@@ -19,7 +19,7 @@
     "@testing-library/cypress": "8.0.3",
     "@vitejs/plugin-vue": "2.3.3",
     "@vitejs/plugin-vue-jsx": "1.3.10",
-    "cypress": "^10.0.0",
+    "cypress": "10.11.0",
     "eslint": "8.17.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-vue": "9.1.0",
@@ -38,6 +38,7 @@
     "optimizeDeps": {
       "include": [
         "@testing-library/cypress/add-commands",
+        "cypress/vue",
         "vue"
       ]
     }
