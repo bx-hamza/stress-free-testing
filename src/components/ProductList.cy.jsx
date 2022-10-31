@@ -1,10 +1,10 @@
 import ProductList from './ProductList.vue'
-import { products } from '../../cypress/component/fixtures/index.mjs'
+import { products } from '../../cypress/component/fixtures'
 
 describe('<ProductList />', () => {
   it('renders some cards', () => {
     cy.viewport(1280, 1280)
-    cy.intercept('http://localhost:4000/products', {
+    cy.intercept('/products', {
       delay: 1000,
       body: products,
     })

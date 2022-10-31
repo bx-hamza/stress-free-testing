@@ -5,8 +5,6 @@ import windiCSS from 'vite-plugin-windicss'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
-import OptimizationPersist from 'vite-plugin-optimize-persist'
-import PkgConfig from 'vite-plugin-package-config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,12 +30,9 @@ export default defineConfig({
     Icons(),
     Components({
       resolvers: IconsResolver(),
-    }),
-
-    // Whenever a CommonJS dependency is imported, add it to optimizeDeps.entries
-    // See https://vitejs.dev/config/#optimizedeps-entries
-    // See https://github.com/antfu/vite-plugin-optimize-persist#motivation
-    PkgConfig(),
-    OptimizationPersist(),
+    })
   ],
+  resolve: {
+    dedupe: ['vue']
+  }
 })

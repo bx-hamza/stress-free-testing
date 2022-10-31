@@ -1,4 +1,4 @@
-import { products } from '../cypress/component/fixtures/index.mjs'
+import { products } from '../cypress/component/fixtures/index'
 
 import express from 'express'
 import cors from 'cors'
